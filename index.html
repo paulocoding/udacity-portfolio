@@ -1,17 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Ninja Developer</title>
         
         <!-- setting the viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <!-- Font Link -->
         <link href='https://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
         <!-- bootstrap stylesheet -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!-- custom styles stylesheet -->
-        <link rel="stylesheet" href="css/styles.css">       
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- bootstrap container start -->
@@ -19,7 +20,7 @@
             <header>
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <img src="img/logo.jpg" class="logo" alt="logo">               
+                        <img src="img/logo.jpg" class="logo" alt="logo">
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <h1 class="light">Paulo Silva</h1>
@@ -47,24 +48,73 @@
                     </div>
                     <div class="row">
                         <article class="col-md-4 featured-item">
-                            <img src="img/feat-1.jpg" class="img-responsive" alt="">
+                            <img src="img/feat-1.jpg" class="img-responsive" alt="camera picture">
                             <h4>Observe</h4>
-                            <a href="https://www.flickr.com/explore">Explore the world</a>                         
+                            <a href="https://www.flickr.com/explore">Explore the world</a>
                         </article>
                         <article class="col-md-4 featured-item">
-                            <img src="img/feat-2.jpg" class="img-responsive" alt="">
+                            <img src="img/feat-2.jpg" class="img-responsive" alt="pencils picture">
                             <h4>Create</h4>
-                            <a href="https://github.com/">Give life to your ideas</a>     
+                            <a href="https://github.com/">Give life to your ideas</a>
                         </article>
                         <article class="col-md-4 featured-item">
-                            <img src="img/feat-3.jpg" class="img-responsive" alt="">
+                            <img src="img/feat-3.jpg" class="img-responsive" alt="sunset picture">
                             <h4>Inspire</h4>
-                            <a href="https://dribbble.com/tags/website">Share your creation</a>                          
+                            <a href="https://dribbble.com/tags/website">Share your creation</a>
                         </article>
+                    </div>
+                </section>
+                <!-- Accordion Section -->
+                <section class="accordion">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Explore</a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                      <div class="panel-body">
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sint totam doloribus, enim nam eum nulla natus quidem mollitia reiciendis ex nobis eligendi, dignissimos! Repudiandae impedit aperiam dolores, temporibus accusantium.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Discover</a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body">
+                                       <p>Donec dapibus faucibus cursus. Maecenas finibus venenatis tortor id viverra. Nulla cursus congue lobortis. Aliquam maximus ac purus ut consequat. Phasellus ultrices neque a diam elementum, id condimentum ipsum faucibus. Curabitur suscipit magna scelerisque, elementum mauris sed, finibus dolor. Fusce quis hendrerit dui, ac aliquam neque.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                      <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Share</a>
+                                      </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                      <div class="panel-body">
+                                        <p>Morbi tempor turpis a aliquam faucibus. Ut lorem velit, dictum vel velit sed, ultricies semper sem. Praesent vel neque lectus. Morbi purus eros, ultrices consectetur aliquet sed, varius eget justo. Phasellus sodales luctus leo ac gravida. Duis elit neque, condimentum quis aliquam eget, blandit ultrices libero. Suspendisse blandit ultricies eros dignissim egestas.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
         </div>
-        <!-- bootstrap container end -->        
+        <!-- bootstrap container end -->
+        <!-- load jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- load bootstrap javascript -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
