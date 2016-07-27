@@ -1,18 +1,61 @@
+/* general styles */
+* {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+a {
+    color: #02b3e4;
+}
+a:hover {
+    color: #55d5ff;
+    text-decoration: none;
+}
+a:visited {
+    color: #02b3e4;
+    text-decoration: none;
+}
 /* header styling */
-header h1, header h2 {
+header h1{
     text-align: right;
+    font-weight: 200;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+header h2 {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 header img.logo {
     display: block;
-    margin: 20px 20px;
+    margin: 20px 20px 5px 20px;
+}
+
+header hr {
+    background-color: #7d97ad;
+    height: 4px;
+    margin-top: 5px;
 }
 
 /* featured section styling */
-section.featured article {
+section.featured h3 {
+    font-size: 28px;
+    color: #7d97ad;
+    margin: 20px 5px 6px 10px;
+}
+
+section.featured h4 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+section.featured .featured-item {
     text-align: center;
 }
-section.featured img {
+section.featured .featured-item img {
     display: block;
     margin: 0 auto;
 }
@@ -23,6 +66,6 @@ section.featured img {
         text-align: center;
     }
     header img.logo {
-        margin: 20px auto;
+        margin: 20px auto 5px auto;
     }
 }
