@@ -1,3 +1,28 @@
-h1 {
-    color: red;
+/* header styling */
+header h1, header h2 {
+    text-align: right;
+}
+
+header img.logo {
+    display: block;
+    margin: 20px 20px;
+}
+
+/* featured section styling */
+section.featured article {
+    text-align: center;
+}
+section.featured img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* media queries */
+@media screen and (max-width:767px) {
+    header h1, header h2 {
+        text-align: center;
+    }
+    header img.logo {
+        margin: 20px auto;
+    }
 }
